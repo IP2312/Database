@@ -20,7 +20,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Employees" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="195" y="530" width="120" height="60" as="geometry" />
+          <mxGeometry x="195" y="390" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YpUnebKYGkCneQpCsx4X-3" value="Customer" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=#FFFFFF;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="460" y="220" width="105" height="55" as="geometry" />
@@ -73,7 +73,7 @@
           <mxGeometry x="330" y="97.5" width="130" height="35" as="geometry" />
         </mxCell>
         <mxCell id="YpUnebKYGkCneQpCsx4X-24" value="&lt;u&gt;SVNR&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=#FFFFFF;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="100" y="545" width="70" height="30" as="geometry" />
+          <mxGeometry x="340" y="405" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YpUnebKYGkCneQpCsx4X-27" value="Subjekt Area" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;labelBackgroundColor=none;fillColor=#182E3E;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="65" y="420" width="110" height="55" as="geometry" />
