@@ -268,8 +268,8 @@
         <mxCell id="lkilGb8h1XhWtgKXXiLa-76" value="(1,*)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=#1D3557;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="100" y="938" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="lkilGb8h1XhWtgKXXiLa-77" value="(0,1)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=#1D3557;labelBackgroundColor=default;" vertex="1" parent="1">
-          <mxGeometry x="95" y="1038" width="50" height="30" as="geometry" />
+        <mxCell id="lkilGb8h1XhWtgKXXiLa-77" value="(0,*)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=#1D3557;labelBackgroundColor=default;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1038" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lkilGb8h1XhWtgKXXiLa-78" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=11;fontColor=#1D3557;labelBackgroundColor=default;" vertex="1" parent="1">
           <mxGeometry x="385" y="1088" width="30" height="30" as="geometry" />
