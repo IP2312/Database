@@ -1,0 +1,5 @@
+SELECT playerno, name FROM players WHERE YEAR_OF_BIRTH > 1960;
+SELECT playerno, Name, TOWN FROM players WHERE SEX = 'F' AND TOWN = 'Stratfort';
+SELECT COUNT(playerno) FROM PLAYERS WHERE YEAR_JOINED > 1970 AND YEAR_JOINED < 1980;
+
+
