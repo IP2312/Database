@@ -2,6 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$USER_HOME$/IdeaProjects/Database/SQL2/21_EmpDept_queries.sql" dialect="Oracle" />
+    <file url="file://$USER_HOME$/IdeaProjects/Database/SQL2/7-12 EmpDept query.sql" dialect="Oracle" />
     <file url="file://$USER_HOME$/IdeaProjects/Database/SQL2/SQL Exercise 4.sql" dialect="Oracle" />
     <file url="file://$USER_HOME$/IdeaProjects/Database/SQL2/Untitled-1.sql" dialect="Oracle" />
   </component>
