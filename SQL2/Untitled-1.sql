@@ -5,6 +5,7 @@ SELECT playerno, name, YEAR_OF_BIRTH FROM PLAYERS WHERE ((MOD(YEAR_OF_BIRTH,4) =
 SELECT paymentno FROM PENALTIES WHERE AMOUNT >50 AND AMOUNT <100;
 SELECT playerno, NAME from PLAYERS WHERE TOWN != 'Stratford' AND TOWN != 'Douglas';
 SELECT playerno, name from PLAYERS WHERE name LIKE '%is%';
+select  PLAYERNO, name from PLAYERS where LEAGUENO is null ;
 
 
 
