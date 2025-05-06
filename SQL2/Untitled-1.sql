@@ -1,8 +1,12 @@
 SELECT playerno, name FROM players WHERE YEAR_OF_BIRTH > 1960;
-SELECT playerno, Name, TOWN FROM players WHERE SEX = 'F' AND TOWN = 'Stratfort';
+SELECT playerno, Name, TOWN FROM players WHERE SEX = 'F' AND TOWN = 'Stratford';
 SELECT COUNT(playerno) FROM PLAYERS WHERE YEAR_JOINED > 1970 AND YEAR_JOINED < 1980;
 SELECT playerno, name, YEAR_OF_BIRTH FROM PLAYERS WHERE ((MOD(YEAR_OF_BIRTH,4) = 0 AND MOD(YEAR_OF_BIRTH,100) != 0) OR MOD(YEAR_OF_BIRTH,400) = 0);
 SELECT paymentno FROM PENALTIES WHERE AMOUNT >50 AND AMOUNT <100;
+SELECT playerno, NAME from PLAYERS WHERE TOWN != 'Stratford' AND TOWN != 'Douglas';
+SELECT playerno, name from PLAYERS WHERE name LIKE '%is%';
+
+
 
 
 
