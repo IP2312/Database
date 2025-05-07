@@ -5,3 +5,4 @@ SELECT EMPNO, ENAME from EMP where sal + nvl(COMM,0) > (Select max(SAL + nvl(COM
 SELECT EMPNO, ENAME, JOB from EMP where DEPTNO = 10 and JOB not in (SELECT JOB from EMP where DEPTNO =30);
 SELECT EMPNO,ENAME, JOB, SAL from EMP where SAL = (select max(SAL) from  EMP);
 
+
