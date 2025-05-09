@@ -1,10 +1,10 @@
-drop table regions;
-drop table countries;
-drop table locations;
-drop table departments;
-drop table jobs;
-drop table employees;
-drop table job_history;
+drop table regions CASCADE CONSTRAINTS;
+drop table countries CASCADE CONSTRAINTS;
+drop table locations CASCADE CONSTRAINTS;
+drop table departments CASCADE CONSTRAINTS;
+drop table jobs CASCADE CONSTRAINTS;
+drop table employees CASCADE CONSTRAINTS;
+drop table job_history CASCADE CONSTRAINTS;
 
 create table regions
 (
@@ -15,27 +15,27 @@ create table regions
 
 create table countries
 (
-    country_id   Number(2)
+    country_id   char(2)
         constraint countries_primary_key primary key,
     country_name varchar2(40),
-    region_id    number(11) constraint countries_regions_froeign_key references  regions(region_id)
+    region_id    number(11) constraint countries_regions_foreign_key references  regions(region_id)
 );
 
 create table locations
 (
-    location_id varchar2(4) constraint location_primary_key primary key,
+    location_id number(4) constraint location_primary_key primary key,
     street_address varchar2(40),
     postal_code varchar2(12),
     city varchar2(30),
     state_provice varchar2(25),
-    country_id char(2)
+    country_id char(2) constraint locations_countries_foreign_key references countries(country_id)
 );
 
 create table departments(
     department_id number(4) constraint  department_primary_key primary key,
     department_name varchar2(30),
     manager_id number(6),
-    location_id number(4)
+    location_id number(4) constraint  departments_locations_foreign_key references locations(location_id)
 );
 
 create table jobs(
@@ -52,19 +52,19 @@ create table employees(
     email varchar2(25),
     phone_number varchar2(20),
     hire_date date,
-    job_id varchar2(10),
+    job_id varchar2(10) constraint employees_job_foreign_key references jobs(job_id),
     salary decimal(8,2),
     commission_pct decimal(2,2),
-    manager_id number(6),
-    department_id number(4)
+    manager_id number(6) constraint employees_manager_foreign_key references employees(employee_id),
+    department_id number(4) constraint employees_department_foreign_key references departments(department_id)
     );
 
 create table job_history(
     employee_id number(6) constraint job_history_primary_key primary key ,
     start_date date,
     end_date date,
-    job_id varchar2(10),
-    departemnt_id number(4)
+    job_id varchar2(10) constraint  job_history_job_foreign_key references jobs(job_id),
+    departemnt_id number(4) constraint job_history_department_foreign_key references departments(department_id)
 );
 
 -- Regions
