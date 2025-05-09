@@ -60,8 +60,8 @@ create table employees(
     );
 
 create table job_history(
-    employee_id number(6) constraint job_history_primary_key primary key ,
-    start_date date,
+    employee_id number(6)  constraint job_history_employee references employees(employee_id),
+    start_date date constraint job_history_primary_key primary key,
     end_date date,
     job_id varchar2(10) constraint  job_history_job_foreign_key references jobs(job_id),
     departemnt_id number(4) constraint job_history_department_foreign_key references departments(department_id)
@@ -93,3 +93,5 @@ INSERT INTO employees VALUES (2, 'Bob', 'Johnson', 'bjohnson@example.com', '234-
 
 -- Job History
 INSERT INTO job_history VALUES (1, DATE '2019-01-01', DATE '2020-01-14', 'HR_MAN', 200);
+
+
