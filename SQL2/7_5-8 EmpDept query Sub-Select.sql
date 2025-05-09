@@ -12,4 +12,7 @@ having count(*) >= 1;
 --7.output of all departments that have at least one employee earning over $1000
 
 Select distinct DEPTNO from EMP WHERE SAL > 1000;
+
+
+--8.output of all departments in which each employee earns at least 1000,-.
 Select distinct DEPTNO from EMP group by DEPTNO having min(SAL) > 1000;
