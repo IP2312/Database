@@ -1,10 +1,10 @@
 --1.NAME, INITIALS and number of sets won for each player
-SELECT Players.name,
-       Players.initials,
+SELECT p.name,
+       p.initials,
        (SELECT sum(WON)
-        FROM matches
-        WHERE Matches.playerno = Players.playerno) AS sets_won
-FROM players;
+        FROM matches m
+        WHERE m.playerno = p.playerno) AS sets_won
+FROM players p;
 
 --2.NAME, PEN_DATE and AMOUNT sorted in descending order by AMOUNT
 SELECT (Select name from PLAYERS where PLAYERS.PLAYERNO = PENALTIES.PLAYERNO) as Name, PEN_DATE, AMOUNT
